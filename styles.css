@@ -1,0 +1,137 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e4e4e7;
+  font-family: 'Kanit', sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: left;
+}
+
+/* Title styles */
+.title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Quote styles */
+.quote {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Exam-links styles */
+.exam-links {
+  font-size: 14px;
+}
+
+.exam-links h3 {
+  margin-bottom: 20px;
+}
+
+.exam-links a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.exam-links a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Button styles */
+.exam-button {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.exam-button:hover {
+  background-color: #1e5fc0;
+}
+
+.tester-button {
+  background-color: #007bff;
+}
+
+.tester-button:hover {
+  background-color: #1e5fc0;
+}
+
+/* Input frame styles */
+.input-frame {
+  color: white;
+  background-color: #696969;
+  max-width: 300px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 5px;
+}
+
+.input-frame label {
+  margin-right: 10px;
+}
+
+.input-frame input[type="text"] {
+  flex: 1;
+  max-width: 200px;
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Border style when input is focused */
+.input-frame input[type="text"]:focus {
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .title {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .quote {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .exam-button {
+    font-size: 18px;
+    padding: 15px 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .tester-button {
+    font-size: 18px;
+    padding: 15px 15px;
+    margin-bottom: 5px;
+  }
+}

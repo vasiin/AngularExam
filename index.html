@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body ng-app="examApp" ng-controller="ExamController">
+  <div class="container" id="app-root">
+    <div ng-view></div>
+    <h1 class="title">The exam center for candidate.</h1>
+    <p class="quote">"You can’t stop the future. You can’t rewind the past. The only way to learn the secret is to press play."</p>
+    <div class="input-frame">
+      <label for="candidateName">Candidate Name:</label>
+      <input type="text" id="candidateName" name="candidateName" placeholder="Enter your ID here." ng-model="candidateName">
+    </div>
+    <br>
+    <form>
+      <button class="exam-button" ng-click="submitExam('developer')">Developer >></button>
+      <br><br>
+      <button class="exam-button tester-button" ng-click="submitExam('tester')">Tester >></button>
+      <br>
+      <div class="exam-links">
+        <h3>Download Programmer</h3>
+        <label>Exam JS TDD (Junior Developer):</label>
+        <a ng-href="https://github.com/iTopPlus/ExamJSTDD" target="_blank">Exam JS TDD</a><br>
+        <h3>Download</h3>
+        <label>ClosePackage Lab (Resource for Data Sci):</label>
+        <a href="#">Excel Test Exam I (Close Job)</a>
+        <br><br>
+        <label>Test Website Lab (Resource for Data Sci):</label>
+        <a href="#">Excel Test Exam II (Test_Website Job)</a>
+        <br>
+        <h3>Exam question (Full Stack Developer)</h3><br>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular-route.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
